@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MegaJoltAndroid</string>
+    <string name="action_settings">Comm Settings</string>
+    <string name="global_settings">Global Settings</string>
+    <string name="global_cylinders_title">Set Number of Cylinders</string>
+    <string name="global_cylinders_message">Choose 4, 6, or 8</string>
+    <string name="global_cylinders_summ">Specify the engine cylinders</string>
+    <string name="global_advance_title">Set Cranking Advance</string>
+    <string name="global_advance_message">Specify a value between 0 and 59. The controller will use this value when the engine RPM drops below approximately 500 RPMs.</string>
+    <string name="global_advance_summ">Specify the Ignition advance used during cranking</string>
+    <string name="global_pip_title">Set PIP Noise Filter</string>
+    <string name="global_pip_message">Specify a value between 0 and 255. A larger value makes the filter more aggressive.</string>
+    <string name="global_pip_summ">This configures a software filter in the controller\'s firmware to minimize the effects of electrical noise on the EDIS PIP line</string>
+    <string name="global_trigger_title">Set Trigger Wheel Offset</string>
+    <string name="global_trigger_message">Specify a value between -5 and 5 degrees</string>
+    <string name="global_trigger_summ">Use this value to adjust for minor crank sensor misalignments</string>
+    <string name="global_reload">Reload Settings from Device</string>
+    <string name="global_save">Save Settings to Device</string>
+    <string name="splash_screen">This is the splash screen for MegaJolt Android</string>
+    <string name="sync_rate_dia_title">Application to Controller Sync Rate</string>
+    <string name="sync_rate_dia_message">This is the communications rate in milliseconds</string>
+    <string name="sync_rate_title">Sync Rate</string>
+    <string name="sync_rate_summ">Set in milliseconds</string>
+    <string name="bt_device_select_dia_title">Bluetooth Selection</string>
+    <string name="bt_device_select_dia_message">Select Bluetooth device from list</string>
+    <string name="bt_device_select_title">Select BT Device</string>
+    <string name="bt_device_select_summ">This is a list of bluetooth devices</string>
+    <string name="bt_device_select_default">This is the default BT device</string>
+    <string name="bt_button_connect">Connect to MegaJolt Lite</string>
+    <string name="bt_button_disconnect">Disconnect</string>
+    <string name="title_activity_guages">Gauges</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="test_text">0.00</string>
+    <string name="gauge1_settings">RPM Gauge Settings</string>
+    <string name="gauge1_max_title">Set RPM Maximum Value</string>
+    <string name="gauge1_max_message">Specify a value between 30 and 100. This will set the maximum value of RPM gauge multiplied by 100.</string>
+    <string name="gauge1_max_summ">Specify the maximum RPM gauge value</string>
+    <string name="gauge1_scale_deg_title">Set Scale Area</string>
+    <string name="gauge1_scale_deg_message">Specify a value between 30 and 270. This will set the degrees of rotation for the RPM gauge.</string>
+    <string name="gauge1_scale_deg_summ">Specify the degrees of RPM gauge rotation</string>
+    <string name="gauge1_total_ticks_title">Set Total Number Of Tick Marks</string>
+    <string name="gauge1_total_ticks_message">Specify a value between 2 and 135. This will set the total number of tick marks for the RPM gauge.</string>
+    <string name="gauge1_total_ticks_summ">Specify the total number of tick marks for RPM gauge</string>
+    <string name="gauge1_maj_ticks_title">Set Major Tick Marks Area</string>
+    <string name="gauge1_maj_ticks_message">Specify a value between 2 and 67. This will set the division of major tick marks for the RPM gauge.</string>
+    <string name="gauge1_maj_ticks_summ">Specify the division of major tick marks for the RPM gauge</string>
+    <string name="gauge2_settings">Advance Gauge Settings</string>
+    <string name="gauge2_max_title">Set Advance Maximum Value</string>
+    <string name="gauge2_max_message">Specify a value between 5 and 60. This will set the maximum value of the Advance gauge.</string>
+    <string name="gauge2_max_summ">Specify the maximum Advance gauge value</string>
+    <string name="gauge2_scale_deg_title">Set Scale Area</string>
+    <string name="gauge2_scale_deg_message">Specify a value between 30 and 270. This will set the degrees of rotation for the Advance gauge.</string>
+    <string name="gauge2_scale_deg_summ">Specify the degrees of Advance gauge rotation</string>
+    <string name="gauge2_total_ticks_title">Set Total Number Of Tick Marks</string>
+    <string name="gauge2_total_ticks_message">Specify a value between 2 and 135. This will set the total number of tick marks for the Advance gauge.</string>
+    <string name="gauge2_total_ticks_summ">Specify the total number of tick marks for Advance gauge</string>
+    <string name="gauge2_maj_ticks_title">Set Major Tick Marks Area</string>
+    <string name="gauge2_maj_ticks_message">Specify a value between 2 and 67. This will set the division of major tick marks for the Advance gauge.</string>
+    <string name="gauge2_maj_ticks_summ">Specify the division of major tick marks for the Advance gauge</string>
+    <string name="gauge3_settings">Load Gauge Settings</string>
+    <string name="gauge3_max_title">Set Load Maximum Value</string>
+    <string name="gauge3_max_message">Specify a value of 105 for normally aspirated engines or 260 for forced air induction. This will set the maximum value of the Load gauge.</string>
+    <string name="gauge3_max_summ">Specify the maximum Advance gauge value</string>
+    <string name="gauge3_scale_deg_title">Set Scale Area</string>
+    <string name="gauge3_scale_deg_message">Specify a value between 30 and 270. This will set the degrees of rotation for the Load gauge.</string>
+    <string name="gauge3_scale_deg_summ">Specify the degrees of Load gauge rotation</string>
+    <string name="gauge3_total_ticks_title">Set Total Number Of Tick Marks</string>
+    <string name="gauge3_total_ticks_message">Specify a value between 2 and 135. This will set the total number of tick marks for the Load gauge.</string>
+    <string name="gauge3_total_ticks_summ">Specify the total number of tick marks for Load gauge</string>
+    <string name="gauge3_maj_ticks_title">Set Major Tick Marks Area</string>
+    <string name="gauge3_maj_ticks_message">Specify a value between 2 and 67. This will set the division of major tick marks for the Load gauge.</string>
+    <string name="gauge3_maj_ticks_summ">Specify the division of major tick marks for the Load gauge</string>
+    <string name="gauges_settings">Gauges Settings</string>
+    <string name="ignition_settings">Ignition Settings</string>
+    <string name="button_reset_gauge">Reset Gauge</string>
+    <string name="button_reset_gauge_summary">Resets gauge to default settings</string>
+    
+    <string name="rpm_settings">Settings for Rev Limit</string>
+    
+    <string name="rpm_thresh_message">Select RPM value for Threshold</string>
+    <string name="rpm_thresh_title">Set Rev Limit Threshold</string>
+    <string name="rpm_thresh_max">Diagnostic3</string>
+    <string name="rpm_thresh_max_summ">Adjust RPM Threshold for Rev Limit in Gauge View</string>
+    <string name="rpm_thresh_max_title">Set Threshold for Rev Limit</string>
+
+    <string name="shift_settings">Settings for Shift Light</string>
+    
+    <string name="shift_thresh_message">Select RPM value for Threshold</string>
+    <string name="shift_thresh_title">Set Shift Light Threshold</string>
+    <string name="shift_thresh_max_summ">Adjust Shift Threshold for activation of Shift Light in Gauge View</string>
+    <string name="shift_thresh_max_title">Set Threshold for Shift Light</string>
+
+    <string name="save_title">Save Current Map to memory</string>
+    
+    <string name="load_title">Load Map from Memory</string>
+    <string name="download_title">Download Map Settings from MegaJolt</string>
+    <string name="upload_title">Upload Map Settings to MegaJolt</string>
+    <string name="flash_title">Commit Map Settings to Flash Memory</string>
+    <string name="shift_text">SHIFT</string>
+    <string name="rev_text">REV</string>
+    
+    
+
+</resources>

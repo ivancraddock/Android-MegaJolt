@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bt_device_select_entries">
+	    <item>Bluetooth Pair 0</item>
+	    <item>Bluetooth Pair 1</item>
+	    <item>Bluetooth Pair 2</item>
+	</array>
+	
+	<array name="bt_device_select_values">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	</array>
+</resources>

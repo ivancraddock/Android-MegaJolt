@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:picker="http://schemas.android.com/apk/res/com.estes.megajoltandroid" >
+    
+
+   <PreferenceScreen
+        	android:key="revLimit"
+        	android:title="Adjust Rev Limit Threshold">
+        <Preference
+            android:key="rpm_thresh_max"
+            android:title="@string/rpm_thresh_max_title">
+            
+        </Preference>
+        
+        <Preference
+            android:key="rpm_current"
+            android:title="@string/button_reset_gauge" 
+            android:summary="@string/button_reset_gauge_summary"/>
+    </PreferenceScreen>
+    <PreferenceScreen
+        	android:key="shiftLight"
+        	android:title="Adjust Shift Light Threshold">
+        <Preference
+            android:key="shift_thresh_max"
+            android:title="@string/shift_thresh_max_title"></Preference>        
+        <Preference
+            android:key="shift_current"
+            android:title="@string/button_reset_gauge" 
+            android:summary="@string/button_reset_gauge_summary"/>
+    </PreferenceScreen>
+    <Preference
+            android:key="saveMap"
+            android:title="Save Current Map to Memory"/>
+    <Preference
+            android:key="loadMap"
+            android:title="@string/load_title"/>
+    <Preference
+            android:key="uploadMap"
+            android:title="@string/upload_title"/>
+    <Preference
+            android:key="downloadMap"
+            android:title="@string/download_title"/>
+    <Preference
+            android:key="sdLoad"
+            android:title="Import Map from SD card"/>
+    
+<!--
+    <Preference android:title="Adjust Rev Limit Threshold"
+                android:key="buttonSaveGlobalSettings"
+                />
+-->
+</PreferenceScreen>

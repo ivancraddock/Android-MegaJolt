@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:picker="http://schemas.android.com/apk/res/com.estes.megajoltandroid" >
+
+    <PreferenceScreen
+        android:key="button_gauge1_settings"
+        android:title="@string/gauge1_settings" >
+        <com.estes.megajoltandroid.dialog.NumberPickerPreference
+            android:defaultValue="100"
+            android:dialogLayout="@layout/number_pref"
+            android:dialogMessage="@string/gauge1_max_message"
+            android:dialogTitle="@string/gauge1_max_title"
+            android:inputType="number"
+            android:key="gauge1_max"
+            android:persistent="true"
+            android:summary="@string/gauge1_max_summ"
+            android:title="@string/gauge1_max_title"
+            picker:strValues="30,35,40,45,50,55,60,65,70,75,80,85,90,95,100" />
+        <com.estes.megajoltandroid.dialog.NumberPickerPreference
+            android:defaultValue="270"
+            android:dialogLayout="@layout/number_pref"
+            android:dialogMessage="@string/gauge1_scale_deg_message"
+            android:dialogTitle="@string/gauge1_scale_deg_title"
+            android:inputType="number"
+            android:key="gauge1_scale_deg"
+            android:summary="@string/gauge1_scale_deg_summ"
+            android:title="@string/gauge1_scale_deg_title"
+            picker:maxValue="270"
+            picker:minValue="30" />
+        <com.estes.megajoltandroid.dialog.NumberPickerPreference
+            android:defaultValue="50"
+            android:dialogLayout="@layout/number_pref"
+            android:dialogMessage="@string/gauge1_total_ticks_message"
+            android:dialogTitle="@string/gauge1_total_ticks_title"
+            android:inputType="number"
+            android:key="gauge1_total_ticks"
+            android:summary="@string/gauge1_total_ticks_summ"
+            android:title="@string/gauge1_total_ticks_title"
+            picker:maxValue="100"
+            picker:minValue="2" />
+        <com.estes.megajoltandroid.dialog.NumberPickerPreference
+            android:defaultValue="5"
+            android:dialogLayout="@layout/number_pref"
+            android:dialogMessage="@string/gauge1_maj_ticks_message"
+            android:dialogTitle="@string/gauge1_maj_ticks_title"
+            android:inputType="number"
+            android:key="gauge1_maj_ticks"
+            android:summary="@string/gauge1_maj_ticks_summ"
+            android:title="@string/gauge1_maj_ticks_title"
+            picker:maxValue="50"
+            picker:minValue="1" />
+
+        <Preference
+            android:key="buttonGauge1Reset"
+            android:title="@string/button_reset_gauge" 
+            android:summary="@string/button_reset_gauge_summary"/>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="button_gauge2_settings"
+        android:title="@string/gauge2_settings" >
+        <com.estes.megajoltandroid.dialog.NumberPickerPreference
+            android:defaultValue="60"
+            android:dialogLayout="@layout/number_pref"
+            android:dialogMessage="@string/gauge2_max_message"
+            android:dialogTitle="@string/gauge2_max_title"
+            android:inputType="number"
+            android:key="gauge2_max"
+            android:summary="@string/gauge2_max_summ"
+            android:title="@string/gauge2_max_title"
+            picker:maxValue="60"
+            picker:minValue="5" />
+        <com.estes.megajoltandroid.dialog.NumberPickerPreference
+            android:defaultValue="120"
+            android:dialogLayout="@layout/number_pref"
+            android:dialogMessage="@string/gauge2_scale_deg_message"
+            android:dialogTitle="@string/gauge2_scale_deg_title"
+            android:inputType="number"
+            android:key="gauge2_scale_deg"
+            android:summary="@string/gauge2_scale_deg_summ"
+            android:title="@string/gauge2_scale_deg_title"
+            picker:maxValue="270"
+            picker:minValue="30" />
+        <com.estes.megajoltandroid.dialog.NumberPickerPreference
+            android:defaultValue="12"
+            android:dialogLayout="@layout/number_pref"
+            android:dialogMessage="@string/gauge2_total_ticks_message"
+            android:dialogTitle="@string/gauge2_total_ticks_title"
+            android:inputType="number"
+            android:key="gauge2_total_ticks"
+            android:summary="@string/gauge2_total_ticks_summ"
+            android:title="@string/gauge2_total_ticks_title"
+            picker:maxValue="60"
+            picker:minValue="2" />
+        <com.estes.megajoltandroid.dialog.NumberPickerPreference
+            android:defaultValue="2"
+            android:dialogLayout="@layout/number_pref"
+            android:dialogMessage="@string/gauge2_maj_ticks_message"
+            android:dialogTitle="@string/gauge2_maj_ticks_title"
+            android:inputType="number"
+            android:key="gauge2_maj_ticks"
+            android:summary="@string/gauge2_maj_ticks_summ"
+            android:title="@string/gauge2_maj_ticks_title"
+            picker:maxValue="30"
+            picker:minValue="1" />
+
+        <Preference
+            android:key="buttonGauge2Reset"
+            android:title="@string/button_reset_gauge" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="button_gauge3_settings"
+        android:title="@string/gauge3_settings" >
+        <com.estes.megajoltandroid.dialog.NumberPickerPreference
+            android:defaultValue="105"
+            android:dialogLayout="@layout/number_pref"
+            android:dialogMessage="@string/gauge3_max_message"
+            android:dialogTitle="@string/gauge3_max_title"
+            android:inputType="number"
+            android:key="gauge3_max"
+            android:summary="@string/gauge3_max_summ"
+            android:title="@string/gauge3_max_title"
+            picker:strValues="105,260" />
+        <com.estes.megajoltandroid.dialog.NumberPickerPreference
+            android:defaultValue="205"
+            android:dialogLayout="@layout/number_pref"
+            android:dialogMessage="@string/gauge3_scale_deg_message"
+            android:dialogTitle="@string/gauge3_scale_deg_title"
+            android:inputType="number"
+            android:key="gauge3_scale_deg"
+            android:summary="@string/gauge3_scale_deg_summ"
+            android:title="@string/gauge3_scale_deg_title"
+            picker:maxValue="270"
+            picker:minValue="30" />
+        <com.estes.megajoltandroid.dialog.NumberPickerPreference
+            android:defaultValue="21"
+            android:dialogLayout="@layout/number_pref"
+            android:dialogMessage="@string/gauge3_total_ticks_message"
+            android:dialogTitle="@string/gauge3_total_ticks_title"
+            android:inputType="number"
+            android:key="gauge3_total_ticks"
+            android:summary="@string/gauge3_total_ticks_summ"
+            android:title="@string/gauge3_total_ticks_title"
+            picker:maxValue="260"
+            picker:minValue="2" />
+        <com.estes.megajoltandroid.dialog.NumberPickerPreference
+            android:defaultValue="5"
+            android:dialogLayout="@layout/number_pref"
+            android:dialogMessage="@string/gauge3_maj_ticks_message"
+            android:dialogTitle="@string/gauge3_maj_ticks_title"
+            android:inputType="number"
+            android:key="gauge3_maj_ticks"
+            android:summary="@string/gauge3_maj_ticks_summ"
+            android:title="@string/gauge3_maj_ticks_title"
+            picker:maxValue="35"
+            picker:minValue="1" />
+
+        <Preference
+            android:key="buttonGauge3Reset"
+            android:title="@string/button_reset_gauge" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

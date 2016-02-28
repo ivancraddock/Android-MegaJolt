@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:picker="http://schemas.android.com/apk/res/com.estes.megajoltandroid" >
+    
+    <Preference android:title="Load settings from MegaJolt"
+                android:key="buttonLoadGlobalSettings"
+                />
+    
+    <com.estes.megajoltandroid.dialog.NumberPickerPreference
+        android:dialogLayout="@layout/number_pref"
+        android:dialogMessage="@string/global_advance_message"
+        android:dialogTitle="@string/global_advance_title"
+        android:key="global_advance"
+        android:summary="@string/global_advance_summ"
+        android:title="@string/global_advance_title"
+        picker:minValue="0"
+        picker:maxValue="59" />
+    <com.estes.megajoltandroid.dialog.NumberPickerPreference
+        android:dialogLayout="@layout/number_pref"
+        android:dialogMessage="@string/global_trigger_message"
+        android:dialogTitle="@string/global_trigger_title"
+        android:inputType="number"
+        android:key="global_trigger"
+        android:summary="@string/global_trigger_summ"
+        android:title="@string/global_trigger_title"
+        picker:strValues="-5,-4,-3,-2,-1,0,1,2,3,4,5" />
+    <com.estes.megajoltandroid.dialog.NumberPickerPreference
+        android:dialogLayout="@layout/number_pref"
+        android:dialogMessage="@string/global_pip_message"
+        android:dialogTitle="@string/global_pip_title"
+        android:inputType="number"
+        android:key="global_pip"
+        android:summary="@string/global_pip_summ"
+        android:title="@string/global_pip_title"
+        picker:minValue="0"
+        picker:maxValue="255" />
+    <com.estes.megajoltandroid.dialog.NumberPickerPreference
+        android:dialogLayout="@layout/number_pref"
+        android:dialogMessage="@string/global_cylinders_message"
+        android:dialogTitle="@string/global_cylinders_title"
+        android:inputType="number"
+        android:key="global_cylinders"
+        android:summary="@string/global_cylinders_summ"
+        android:title="@string/global_cylinders_title"
+        picker:strValues="4,6,8" />
+
+    <Preference android:title="Save settings to MegaJolt"
+                android:key="buttonSaveGlobalSettings"
+                />
+
+</PreferenceScreen>

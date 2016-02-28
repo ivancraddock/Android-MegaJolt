@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/splash_screen"
+        android:src="@drawable/mj_bg" />
+    
+<!--     <Button -->
+<!--         android:id="@+id/buttonGuages" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:layout_alignBottom="@+id/imageView1" -->
+<!--         android:layout_alignLeft="@+id/buttonIgnitionMap" -->
+<!--         android:layout_alignRight="@+id/buttonIgnitionMap" -->
+<!--         android:onClick="openGuages" -->
+<!--         android:text="Gauges" /> -->
+
+<!--     <Button -->
+<!--         android:id="@+id/buttonIgnitionMap" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_above="@+id/buttonGuages" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:onClick="openIgnitionMap" -->
+<!--         android:text="Ignition Map" /> -->
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/btn_default"
+        android:text="@string/bt_button_connect"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+
+</RelativeLayout>

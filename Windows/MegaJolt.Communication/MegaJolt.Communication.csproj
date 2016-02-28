@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4F70A58-094E-43EA-A778-5730B3A3FCDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MegaJolt.Communication</RootNamespace>
+    <AssemblyName>MegaJolt.Communication</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile44</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AdvanceCorrection.cs" />
+    <Compile Include="AspirationType.cs" />
+    <Compile Include="Bin.cs" />
+    <Compile Include="Bins.cs" />
+    <Compile Include="BitState.cs" />
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\UpdateIgnitionConfigurationCommand.cs" />
+    <Compile Include="Commands\UpdateGlobalConfigurationCommand.cs" />
+    <Compile Include="Commands\FlashIgnitionConfigurationCommand.cs" />
+    <Compile Include="Commands\UpdateIgnitionCellCommand.cs" />
+    <Compile Include="Commands\GetIgnitionConfigurationCommand.cs" />
+    <Compile Include="Commands\GetStateCommand.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="CurrentState.cs" />
+    <Compile Include="EventArgs.cs" />
+    <Compile Include="GlobalConfiguration.cs" />
+    <Compile Include="ICommunicationPort.cs" />
+    <Compile Include="IgnitionCellIndex.cs" />
+    <Compile Include="IgnitionConfiguration.cs" />
+    <Compile Include="IgnitionMap.cs" />
+    <Compile Include="InvalidCommandException.cs" />
+    <Compile Include="EdisType.cs" />
+    <Compile Include="IPersistedStorage.cs" />
+    <Compile Include="LoadType.cs" />
+    <Compile Include="Responses\GetIgnitionConfigurationResponse.cs" />
+    <Compile Include="Responses\GetStateResponse.cs" />
+    <Compile Include="Responses\EmptyResponse.cs" />
+    <Compile Include="Commands\GetGlobalConfigurationCommand.cs" />
+    <Compile Include="Responses\GetGlobalConfigurationResponse.cs" />
+    <Compile Include="Commands\GetVersionCommand.cs" />
+    <Compile Include="Responses\GetVersionResponse.cs" />
+    <Compile Include="InvalidResponseException.cs" />
+    <Compile Include="LogEventArgs.cs" />
+    <Compile Include="LogLevel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Responses\Response.cs" />
+    <Compile Include="SavedStates.cs" />
+    <Compile Include="UserOutput.cs" />
+    <Compile Include="UserOutputMode.cs" />
+    <Compile Include="UserOutputType.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

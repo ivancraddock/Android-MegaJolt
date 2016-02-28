@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditTextPreference
+        android:key="sync_rate_key"
+        android:dialogTitle="@string/sync_rate_dia_title"
+        android:dialogMessage="@string/sync_rate_dia_message"
+        android:title="@string/sync_rate_title"
+        android:summary="@string/sync_rate_summ"
+        android:defaultValue="250"/>
+
+        <ListPreference android:key="bluetooth_device"
+            android:title="Bluetooth Device" 
+            android:summary="Select paired Bluetooth device connected to MegaJolt Lite Jr."
+            android:defaultValue="0" />
+
+
+</PreferenceScreen>

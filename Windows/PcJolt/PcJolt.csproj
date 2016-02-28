@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A595D67-874A-480D-8501-6CD9F3B7CC2C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PcJolt</RootNamespace>
+    <AssemblyName>PcJolt</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gauge.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28Simulator%29|AnyCPU'">
+    <OutputPath>bin\Debug %28Simulator%29\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SIMULATOR</DefineConstants>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AquaGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AquaGauge.Designer.cs">
+      <DependentUpon>AquaGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseOptionsForm.Designer.cs">
+      <DependentUpon>CloseOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalConfigurationForm.Designer.cs">
+      <DependentUpon>GlobalConfigurationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageExtentions.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewNumericUpDownColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="StartupAction.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AquaGauge.resx">
+      <DependentUpon>AquaGauge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseOptionsForm.resx">
+      <DependentUpon>CloseOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalConfigurationForm.resx">
+      <DependentUpon>GlobalConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\External\SourceGrid\SourceGrid.csproj">
+      <Project>{2a5a1657-dba8-4117-8e2a-9f1236ace9e2}</Project>
+      <Name>SourceGrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MegaJolt.Communication.SimulatorConnection\MegaJolt.Communication.SimulatorConnection.csproj">
+      <Project>{e569c300-4d03-4924-8c82-c0f6d31c783b}</Project>
+      <Name>MegaJolt.Communication.SimulatorConnection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MegaJolt.Communication.WindowsPC\MegaJolt.Communication.WindowsPC.csproj">
+      <Project>{0a79f85e-7457-4c2c-aa3b-53ed0d53a5b8}</Project>
+      <Name>MegaJolt.Communication.WindowsPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MegaJolt.Communication\MegaJolt.Communication.csproj">
+      <Project>{a4f70a58-094e-43ea-a778-5730b3a3fcdd}</Project>
+      <Name>MegaJolt.Communication</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gauge.ico" />
+    <Content Include="Resources\16x16\SliverBall.png" />
+    <Content Include="Resources\16x16\RedBall.png" />
+    <Content Include="Resources\16x16\GreenBall.png" />
+    <Content Include="Resources\16x16\YeallowBall.png" />
+    <Content Include="Resources\16x16\Write.png" />
+    <Content Include="Resources\16x16\Flash.png" />
+    <Content Include="Resources\16x16\Read.png" />
+    <Content Include="Resources\16x16\Save.png" />
+    <Content Include="Resources\16x16\Open.png" />
+    <Content Include="Resources\16x16\New.png" />
+    <Content Include="Resources\16x16\Settings.png" />
+    <Content Include="Resources\16x16\Connect.png" />
+    <Content Include="Resources\16x16\Disconnect.png" />
+    <None Include="Resources\arrow_down_blue.png" />
+    <None Include="Resources\arrow_up_blue.png" />
+    <Content Include="Resources\Icons\flash.ico" />
+    <Content Include="Resources\Icons\gauge.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
